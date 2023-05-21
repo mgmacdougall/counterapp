@@ -9,7 +9,7 @@ let countCache = [];
 function increment() {
   count += 1;
   countEl.textContent = count;
-  updateCache();
+  // updateCache();
 }
 
 function updateCache() {
@@ -41,8 +41,7 @@ function resetApp() {
 }
 
 function save() {
+  updateCache();
   updateMessage();
   resetCounter();
-  flushCache();
-  
 }
